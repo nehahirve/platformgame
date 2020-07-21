@@ -1,0 +1,69 @@
+$background: lightblue;
+$wall: linen;
+$lava: salmon;
+$coin: rgb(244, 255, 148);
+$player: grey;
+
+body {
+  background: linen;
+}
+
+.background {
+  background: $background;
+  table-layout: fixed;
+  border-spacing: 0;
+
+  td {
+    padding: 0;
+  }
+}
+
+.lava {
+  background: $lava;
+}
+
+.wall {
+  background: $wall;
+}
+
+.actor {
+  position: absolute;
+}
+
+.coin {
+  background: $coin;
+}
+
+.player {
+  background: $player;
+}
+
+.lost .player {
+  background: rgb(160, 64, 64);
+}
+.won .player {
+  box-shadow: -4px -7px 8px white, 4px -7px 8px white;
+}
+
+.game {
+  position: relative;
+  margin-top: 100px;
+  max-width: 600px;
+  max-height: 600px;
+  overflow: hidden;
+}
+
+#container {
+  max-width: 600px;
+  max-height: 800px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.skewright {
+  transform: skew(.212rad);
+}
+
+.skewleft {
+  transform: skew(-.212rad);
+}
